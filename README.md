@@ -11,5 +11,5 @@ Python版本：2.7
 首先打开某一本图书页面的URL地址，https://book.douban.com/subject/20432061/， 经过分析每一本图书的URL地址均为https://book.douban.com/subject/XXXXX/ 格式，其中XXX为一组长度不等的数字，由此可以得出该数字为该本图书的ID，可以用来当做数据库主键使用，在分析具体html页面，发现每本图书页面可能有其他相关图书的连接，由此可以使用正则表达式获取其他图书的ID，并依次爬取相关内容。
 
 使用方法：
-在main函数中实例化DoubanBookCrawler，调用startCrawl函数，参数中填写需要爬取页面的豆瓣ID，也就是爬虫爬取的起点，例如我要从https://book.douban.com/subject/20432061/页面开始爬取，则输入以下代码    crawler = DoubanBookCrawler()
+在main函数中实例化DoubanBookCrawler，调用startCrawl函数，参数中填写需要爬取页面的豆瓣ID，也就是爬虫爬取的起点，例如我要从https://book.douban.com/subject/20432061/ 页面开始爬取，则输入以下代码    crawler = DoubanBookCrawler()
 crawler.startCrawl("20432061")
