@@ -1,6 +1,6 @@
 技术路线：requests->re->BeautifulSoup->Sqlite
 
-Python版本：2.7
+Python版本：2.7.9
 
 爬虫简介：这是一个豆瓣读书爬虫，获取图书信息并写入如数据库。
 
