@@ -219,7 +219,6 @@ class DoubanBookCrawler:
             self.db_connect.close()
 
 if __name__ == "__main__":
-
     crawler = DoubanBookCrawler()
     # 在startCrawl函数参数中添加需要爬取图书的豆瓣ID，也就是爬虫爬取的起点
     crawler.startCrawl("20432061")
