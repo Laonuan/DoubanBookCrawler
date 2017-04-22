@@ -21,6 +21,7 @@ wc = WordCloud(font_path='/System/Library/Fonts/PingFang.ttc',  # 设置字体
                background_color="black",  # 背景颜色
                max_words=2000,  # 词云显示的最大词数
                max_font_size=200,  # 字体最大值
+               min_font_size=10,
                random_state=42,
                width=1024,
                height=768
@@ -37,4 +38,4 @@ plt.show()
 # 绘制词云
 
 # 保存图片
-wc.to_file("cloud.png")
+wc.to_file("Cloud.png")
